@@ -126,15 +126,11 @@ WSGI_APPLICATION = 'boutiquer_ado.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': BASE_DIR / 'db.sqlite3',
-#     }
-# }
-
 DATABASES = {
-    'default': dj_database_url.parse('postgres://bcjgfwndhnracx:c22a83759580ee6892522f97e20cedd44444e0b2ec2e48833eda712f018b51af@ec2-52-17-1-206.eu-west-1.compute.amazonaws.com:5432/d44isducbmcskc')
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
+    }
 }
 
 
